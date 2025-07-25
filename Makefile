@@ -88,6 +88,10 @@ PROGRAMMER = avrispmkII
 PORT = usb
 OPTIONS = -B 1.0
 
+PROGRAMMER = dragon_pp
+PORT = usb
+OPTIONS = 
+
 # Pololu USB AVR Programmer
 #PROGRAMMER = stk500v2
 #PORT = /dev/ttyACM0
@@ -343,6 +347,7 @@ endif
 ifeq (${FAMILY},atmega328_324_640)
   # high byte: use default settings, disable JTAG
   HFUSE = -U hfuse:w:0xd9:m
+ # HFUSE = -U hfuse:w:0xdf:m
   # extended byte: BOD level 4.3V
   EFUSE = -U efuse:w:0xfc:m
   # low byte: clock settings

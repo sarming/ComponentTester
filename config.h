@@ -36,7 +36,7 @@
  *    to match your rotary encoder
  */
 
-//#define HW_ENCODER
+#define HW_ENCODER
 
 
 /*
@@ -58,7 +58,7 @@
  *  - adjust value to match your rotary encoder
  */
 
-#define ENCODER_STEPS    24
+#define ENCODER_STEPS    20
 
 
 /*
@@ -80,7 +80,7 @@
  *    reference
  */
 
-//#define HW_REF25
+#define HW_REF25
 
 
 /*
@@ -114,7 +114,7 @@
  *  - uncomment to enable
  */
 
-//#define HW_ZENER
+#define HW_ZENER
 
 
 /*
@@ -137,7 +137,7 @@
  *  - uncomment to enable
  */
 
-//#define ZENER_UNSWITCHED
+#define ZENER_UNSWITCHED
 
 
 /*
@@ -188,7 +188,7 @@
  *  - uncomment to enable
  */
 
-//#define HW_FREQ_COUNTER_BASIC
+#define HW_FREQ_COUNTER_BASIC
 
 
 /*
@@ -216,7 +216,7 @@
  *  - see RINGTESTER_PORT in config-<MCU>.h for dedicated pin 
  */
 
-//#define HW_RING_TESTER
+#define HW_RING_TESTER
 #define RING_TESTER_PIN                 /* dedicated pin */
 //#define RING_TESTER_PROBES              /* probes */
 
@@ -414,7 +414,7 @@
  *  - uncomment to enable
  */
 
-#define SW_PWM_SIMPLE
+// #define SW_PWM_SIMPLE
 
 
 /*
@@ -479,7 +479,7 @@
  *  - uncomment to enable
  */
 
-#define SW_SQUAREWAVE
+// #define SW_SQUAREWAVE
 
 
 /*
@@ -489,7 +489,7 @@
  *  - uncomment to enable
  */
 
-#define SW_IR_RECEIVER
+//#define SW_IR_RECEIVER
 
 
 /*
@@ -608,14 +608,14 @@
 
 /*
  *  DS18S20 - OneWire temperature sensor
- *  - DS18S20_HIGHRES: enable high resolution (0.01°C)
- *    normal resolution is 0.5°C
+ *  - DS18S20_HIGHRES: enable high resolution (0.01ï¿½C)
+ *    normal resolution is 0.5ï¿½C
  *  - uncomment to enable
  *  - also enable ONEWIRE_PROBES or ONEWIRE_IO_PIN (see section 'Busses')
  */
 
 //#define SW_DS18S20
-//#define DS18S20_HIGHRES       /* high resolution (0.01°C) */
+//#define DS18S20_HIGHRES       /* high resolution (0.01ï¿½C) */
 
 
 /*
@@ -644,7 +644,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_CAP_LEAKAGE
+#define SW_CAP_LEAKAGE
 
 
 /*
@@ -653,7 +653,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_REVERSE_HFE
+#define SW_REVERSE_HFE
 
 
 /*
@@ -663,7 +663,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_HFE_CURRENT
+#define SW_HFE_CURRENT
 
 
 /*
@@ -766,7 +766,7 @@
  *  - uncomment to enable
  */ 
 
-//#define SW_C_VLOSS
+#define SW_C_VLOSS
 
 
 /*
@@ -940,7 +940,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_AUTOHOLD_FOUND
+#define UI_AUTOHOLD_FOUND
 
 
 /*
@@ -1187,7 +1187,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_MENU_PAGEMODE
+#define UI_MENU_PAGEMODE
 
 
 /*
@@ -1231,7 +1231,7 @@
 /*
  *  Round some values if appropriate.
  *  - for
- *    - DS18B20 (0.1 °C/F)
+ *    - DS18B20 (0.1 ï¿½C/F)
  *  - uncomment to enable
  */
 
@@ -1474,9 +1474,9 @@
  *  Correction factors for capacitors (in 0.1%)
  *  - positive factor increases capacitance value
  *    negative factor decreases capacitance value
- *  - CAP_FACTOR_SMALL for caps < 4.7µF
- *  - CAP_FACTOR_MID for caps 4.7 - 47µF
- *  - CAP_FACTOR_LARGE for caps > 47µF
+ *  - CAP_FACTOR_SMALL for caps < 4.7ï¿½F
+ *  - CAP_FACTOR_MID for caps 4.7 - 47ï¿½F
+ *  - CAP_FACTOR_LARGE for caps > 47ï¿½F
  */
 
 #define CAP_FACTOR_SMALL      0      /* no correction */ 
